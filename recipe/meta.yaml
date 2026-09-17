@@ -1,6 +1,6 @@
 {% set name = "molsystem" %}
-{% set version = "2026.6.29" %}
-{% set sha256 = "98b563aa17f160c3f7aaefb81350732c9506737132802899448580ef47e745d2" %}
+{% set version = "2026.9.17.1" %}
+{% set sha256 = "43b460fa0e862355dce6a0cab80c16bd1e3551212cc12b801698e9c68cf7e092" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -20,6 +20,7 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
+    - mendeleev
     - numpy
     - openbabel
     - pandas
@@ -28,6 +29,7 @@ requirements:
     - pycifrw
     - python >={{ python_min }}
     - rdkit
+    - scipy
     - seamm-util
     - seekpath
     - spglib
